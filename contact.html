@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+	<meta charset="utf-8">
+	<title>WCB Cafe|CONTACT</title>
+	<meta name="Description" content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--------CSS-------->
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" href="images/favicon.png">
+	<!--------script---------->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    
+    <body>
+    <div class="big-bg" id="contact">
+      <header class="page-header wrapper">
+        <h1><a href="index.html"><img class="logo" src="images/logo.svg" alt="WCBカフェホーム"></a></h1>
+        <nav>
+          <ul class="main-nav">
+            <li><a href="news.html">NEWS</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </nav>
+        </header>
+      <div class="wrapper">
+		  <h2 class="page-title" id="makeImg">CONTACT</h2>
+			<form action="example">
+		  		<div><label for="your-name">お名前</label>
+					<input type="text" id="your-name">
+				</div>
+				<div><label for="your-email">アドレス</label>
+					<input type="email" id="your-email">
+				</div>
+				<div><label for="message">メッセージ</label>
+					<textarea name="message" id="message"></textarea>
+				</div>
+				<input type="submit" value="確認" class="button">
+				<p class="button">css削除</p>
+		  	</form>
+       </div><!-------------page-header .wrapper----------------------->
+    </div><!------------------CONTACT---------------->
+	<footer>
+      <div class="wrapper">
+        <p><small>&copy;2020 Manabox</small></p>
+      </div>
+		</footer>
+		
+	<script>
+		$("p.button").click(function(){
+			$("#your-name,#your-email,#message").fadeTo("fast", 0);
+		});
+	</script>
+    </body>
+</html>

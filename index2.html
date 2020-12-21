@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+		<meta charset="utf-8">
+		<title>WCB Cafe</title>
+		<meta name="Description" content="ブレンドコーヒーとヘルシーなオーガニックフードを提供するカフェ">
+	
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/style2.css"> <!--CSS-->
+		<link rel="icon" href="images/favicon.png">
+		
+	<!--------script---------->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    
+    <body>
+    <div class="big-bg" id="home">
+	<i class="fas fa-bars"></i>
+ 	<header class="page-header wrapper">
+        <div class="header-menu">
+			<h1><a href="index.html"><img class="logo" src="images/logo.svg" alt="WCBカフェホーム"></a></h1>
+			
+		</div>
+        <nav>
+          <div class="hambg">
+			  <ul class="main-nav">
+				<li><a href="news.html">NEWS</a></li>
+				<li><a href="menu.html">MENU</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			  </ul>
+          </div>
+          </nav>
+        </header>
+      <div class="home-content wrapper">
+        <h2 class="page-title">We'll Make Your Day</h2>
+        <p>オシャレなカフェで癒されてみませんか？無添加の食材で体の中からリフレッシュ。</p>
+        <a class="button" href="menu.html">メニューを見る</a>
+        </div><!-------------home content----------------------->
+    </div>
+	
+	<script>
+		$(function(){
+			$("i").click(function(){
+				$(".main-nav:not(:animated)").slideToggle();
+			});
+		});
+		</script>
+    </body>
+</html>
